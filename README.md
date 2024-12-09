@@ -54,7 +54,7 @@ The TFLite models were deployed on a Raspberry Pi, achieving efficient classific
 ---
 
 ## Results
-- **Best Submitty Score:** 2249/4000
+- **Score:** 2249/4000
 - **Deployment Metrics:**
   - Classification time on Raspberry Pi: ~900 seconds.
   - Efficient model loading and prediction pipeline reduced resource usage and processing time.
