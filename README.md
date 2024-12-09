@@ -1,7 +1,7 @@
 # CAPTCHA Solver: A Scalable and Efficient Approach
 
 ## Overview
-This project focuses on building a scalable CAPTCHA solving system capable of identifying text-based CAPTCHAs with varying character lengths (1 to 6) and diverse fonts. Using a modular approach, we implemented and trained seven deep learning models: one for predicting CAPTCHA length and six specialized for CAPTCHA classification based on length.
+This project focuses on building a scalable CAPTCHA solving system capable of identifying text-based CAPTCHAs with varying character lengths (1 to 6) and diverse fonts. Using a modular approach,implemented and trained seven deep learning models: one for predicting CAPTCHA length and six specialized for CAPTCHA classification based on length.
 
 The project emphasizes scalability by leveraging TensorFlow Lite (TFLite) for efficient deployment on resource-constrained devices like Raspberry Pi, ensuring fast and accurate CAPTCHA classification.
 
@@ -71,11 +71,9 @@ The TFLite models were deployed on a Raspberry Pi, achieving efficient classific
 ---
 
 ## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/hari9-9/Captcha-Solver.git
-   cd Captcha-Solver
-   pip install -r requirements.txt
-   python convert_to_tflite.py
+- Run length_model training length_model_train.py
+- Run cpatha_model/process.sh to automatically generate model for all six lengths
+- Pi/ folder has tf to tf_lite converter and classifier files
+   
 
 
